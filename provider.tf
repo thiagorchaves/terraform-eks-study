@@ -20,13 +20,11 @@ terraform {
     bucket = "terraform-study-comunidadedevops"
     key    = "dev/terraform.tfstate"
     region = "us-east-1"
-    profile = "terraform-study"
   }
 }
 
 provider "aws" {
-  region = "us-east-1"
-  profile = "terraform-study"
+  region = var.region
 }
 
 provider "kubernetes" {
