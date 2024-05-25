@@ -11,6 +11,6 @@ variable "region" {
   default = "AWS region to create the resources"
 }
 variable "tags" {
-  type = string
+  type = map
   default = "A map of tags to add to all AWS resources"
 }
