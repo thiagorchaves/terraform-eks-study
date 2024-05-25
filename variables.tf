@@ -12,5 +12,5 @@ variable "region" {
 }
 variable "tags" {
   type = map
-  default = "A map of tags to add to all AWS resources"
+  description ="A map of tags to add to all AWS resources"
 }
